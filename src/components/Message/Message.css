@@ -1,0 +1,39 @@
+.message__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.message__wrapper_current-user {
+  align-self: flex-end;
+}
+
+.message {
+  color: #ffffff;
+  font-size: 18px;
+  display: inline-block;
+  padding: 10px;
+  background-color: dodgerblue;
+  border-radius: 8px;
+  margin: 8px;
+  border: 1px solid lightgray;
+  word-break: break-word;
+}
+
+.message_current-user {
+  color: black;
+  background-color: #ffffff;
+  order: 2;
+}
+
+.message__username {
+  text-align: center;
+  display: block;
+  padding: 8px;
+  color: gray;
+}
+
+@media screen and (max-width: 425px) {
+  .message {
+    font-size: 14px;
+  }
+}

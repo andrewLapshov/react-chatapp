@@ -1,0 +1,24 @@
+.userslist {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  width: 30%;
+  height: 100%;
+  border-right: 1px solid gray;
+  box-sizing: border-box;
+  padding: 0 8px;
+}
+
+.userslist__title {
+  margin: 6px 0 12px;
+  text-align: center;
+}
+
+.userslist__name {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .userslist {
+    display: none;
+  }
+}
