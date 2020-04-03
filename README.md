@@ -19,3 +19,7 @@
 ``` npm install ```
 3. Запустить приложение
 ``` npm run start ```
+
+### Демо приложения
+
+Приложение доступно по ссылке: https://nervous-jones-aa9c52.netlify.com/
