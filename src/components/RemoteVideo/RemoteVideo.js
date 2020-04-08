@@ -58,7 +58,7 @@ const RemoteVideo = ({ socket, streamer }) => {
       <video
         autoPlay
         muted={volume ? '' : 'muted'}
-        className="video__container"
+        className="video__content"
         ref={remoteVideo}
       />
       <span className="video__name">{streamer}</span>

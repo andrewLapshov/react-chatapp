@@ -1,4 +1,4 @@
-.video__container {
+.video__content {
   max-width: 320px;
   align-items: center;
   display: block;
@@ -6,9 +6,51 @@
 
 .video {
   width: 100%;
+  position: relative;
+  min-height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.video__container {
+  position: relative;
+}
+
+.video__container_hide {
+  display: none;
+}
+
+.video__toggler-wrapper {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  background-color: #fff;
+  outline: none;
+  border: none;
+}
+
+.video__toggler {
+  width: 34px;
+  height: 34px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: initial;
+}
+
+.video__toggler_show {
+  background-image: url('../../images/show.svg');
+}
+
+.video__toggler_hide {
+  background-image: url('../../images/hide.svg');
+}
+
+.video__toggler-caption {
+  display: block;
 }
 
 .video__wrapper {

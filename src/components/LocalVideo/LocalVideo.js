@@ -100,7 +100,7 @@ const LocalVideo = ({ socket, name, setStreamButton }) => {
 
   return load ? (
     <div className="video__wrapper">
-      <video muted className="video__container" ref={localVideo} />
+      <video muted className="video__content" ref={localVideo} />
       <span className="video__name">{name}</span>
       <button
         className={`video__volume video__volume_mic ${
