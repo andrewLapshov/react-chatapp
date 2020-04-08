@@ -3,6 +3,7 @@
   display: flex;
   box-sizing: border-box;
   height: 50px;
+  border-top: 1px solid gray;
 }
 
 .sendform__input {
@@ -10,8 +11,9 @@
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  border: 1px solid gray;
   padding-left: 8px;
+  border: none;
+  outline: none;
 }
 
 .sendform__button {
@@ -23,4 +25,24 @@
   color: #ffffff;
   text-decoration: none;
   box-sizing: border-box;
+  cursor: pointer;
+}
+
+.sendform__video {
+  box-sizing: border-box;
+  padding: 4px;
+  border: none;
+  background-color: transparent;
+  width: 50px;
+  background-image: url('../../images/video.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  margin-right: 12px;
+  outline: none;
+}
+
+.sendform__video_off {
+  background-image: url('../../images/video-off.svg');
 }

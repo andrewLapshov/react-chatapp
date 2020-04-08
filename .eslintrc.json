@@ -10,16 +10,25 @@
         "allow": ["_id", "_doc"]
       }
     ],
+    "no-unused-expressions": [
+      "error",
+      {
+        "allowTernary": true
+      }
+    ],
+    "prefer-destructuring": "off",
+    "react/prop-types": "off",
     "react/no-array-index-key": "off",
     "react/button-has-type": "off",
     "react/destructuring-assignment": "off",
-    "react/prop-types": 1,
     "react/jsx-filename-extension": [
       1,
       {
         "extensions": [".js", ".jsx"]
       }
-    ]
+    ],
+    "jsx-a11y/media-has-caption": "off",
+    "jsx-a11y/control-has-associated-label": "off"
   },
   "env": {
     "browser": true,
