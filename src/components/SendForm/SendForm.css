@@ -11,7 +11,7 @@
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  padding-left: 8px;
+  padding: 0 0 0 8px;
   border: none;
   outline: none;
 }
@@ -26,6 +26,23 @@
   text-decoration: none;
   box-sizing: border-box;
   cursor: pointer;
+}
+
+@media screen and (max-width: 426px) {
+  .sendform__text {
+    display: none;
+  }
+
+  .sendform__button {
+    display: block;
+    width: 70px;
+    background-image: url('../../images/send.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: initial;
+    padding: 0 15px;
+    border: none;
+  }
 }
 
 .sendform__video {

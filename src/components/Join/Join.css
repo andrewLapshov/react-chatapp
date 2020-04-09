@@ -9,6 +9,12 @@
   text-align: center;
 }
 
+@media screen and (max-width: 426px) {
+  .join__title {
+    font-size: 20px;
+  }
+}
+
 .join__wrapper {
   max-width: 1440px;
   margin: auto;
