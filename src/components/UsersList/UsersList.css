@@ -4,7 +4,14 @@
   width: 30%;
   height: 100%;
   box-sizing: border-box;
+  display: flex;
+  border-left: 1px solid gray;
+}
+
+.userslist__container {
   padding: 0 8px;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .userslist__title {
@@ -16,8 +23,40 @@
   display: block;
 }
 
+.userslist__toggler {
+  width: 35px;
+  height: 100%;
+  background-image: url('../../images/users.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: initial;
+  cursor: pointer;
+  background-color: #fff;
+  outline: none;
+  border: none;
+  display: none;
+  padding: 0 8px;
+  margin: auto 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
 @media screen and (max-width: 600px) {
   .userslist {
-    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 50px;
+    right: 0;
+    width: auto;
+    background-color: #fff;
+    transform: translateX(calc(100% - 35px));
+    transition: transform 0.2s ease;
+  }
+
+  .userslist__toggler {
+    display: block;
+  }
+
+  .userslist_show {
+    transform: translateX(0px);
   }
 }

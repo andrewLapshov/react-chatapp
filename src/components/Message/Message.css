@@ -32,8 +32,13 @@
   color: gray;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
   .message {
     font-size: 14px;
+  }
+
+  .message__username {
+    font-size: 14px;
+    padding: 0;
   }
 }

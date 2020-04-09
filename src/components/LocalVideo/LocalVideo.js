@@ -20,6 +20,14 @@ const LocalVideo = ({ socket, name, setStreamButton }) => {
     setMic((mic) => !mic);
   };
 
+  const fullScreenHandler = () => {
+    if (document.fullscreenElement) {
+      document.exitFullscreen();
+    } else {
+      localVideo.current.requestFullscreen();
+    }
+  };
+
   useEffect(() => {
     navigator.mediaDevices
       .getUserMedia(constraints)
@@ -100,7 +108,12 @@ const LocalVideo = ({ socket, name, setStreamButton }) => {
 
   return load ? (
     <div className="video__wrapper">
-      <video muted className="video__content" ref={localVideo} />
+      <video
+        muted
+        onClick={fullScreenHandler}
+        className="video__content"
+        ref={localVideo}
+      />
       <span className="video__name">{name}</span>
       <button
         className={`video__volume video__volume_mic ${

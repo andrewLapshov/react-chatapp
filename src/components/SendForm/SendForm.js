@@ -52,7 +52,7 @@ const SendForm = ({
         type="submit"
         onClick={(e) => sendMessage(e)}
       >
-        Отправить
+        <span className="sendform__text">Отправить</span>
       </button>
     </form>
   );
